@@ -1,4 +1,4 @@
-# Customer Portal Application
+# Cube React Assessment Application
 
 ## Hosted Link
 
@@ -6,7 +6,7 @@ You can access the hosted application [here](https://cube-interview-assignment-s
 
 ## Features
 
-1. **Titkl List and Details Display**:
+1. **Title List and Details Display**:
 
    - The webapp has a list of titles on the left side.
    - Upon clicking a card on the left, the details of the selected title are shown on the right side.
@@ -58,10 +58,10 @@ The main files and directories in this project are:
   - `index.tsx`: The entry point for the React application.
   - `styles/`: Contains the Tailwind CSS configuration and global styles.
 
-## Additional Information about optimization
+## Additional Information about optimization implemented
 
     - The application uses React hooks (`useState`, `useEffect`) for managing state and side effects efficiently.
 
     - Used (` React.memo`, `useCallback`) to prevent unnecessary re-rendering.
 
-    - For the left side sidebar, implemented infinite scrolling feature so that data keeps on loading as we scroll improving the initial load time.
+    - For the left side sidebar, implemented Infinite Scrolling feature so that data keeps on loading as we scroll improving the initial load time.
