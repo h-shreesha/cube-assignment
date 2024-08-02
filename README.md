@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Customer Portal Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hosted Link
 
-## Available Scripts
+You can access the hosted application [here](https://cube-interview-assignment-shreesha.netlify.app/).
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Titkl List and Details Display**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   - The webapp has a list of titles on the left side.
+   - Upon clicking a card on the left, the details of the selected title are shown on the right side.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. **Title Card Information**:
+   - Each card in the list shows the name of the title and description.
+3. **Right Side Details**:
+   - Right side details include the title, subtitle and a 3x3 grid of 6 photos.
+4. **Highlighting Selected Card**:
+   - The selected card on the left is highlighted to indicate which Title's details are being viewed.
+5. **Dynamic Photo Grid**:
+   - All the pictures in the photo grid change every 10 seconds.
+   - Photos are fetched from a public API [JsonPlaceholder](https://jsonplaceholder.typicode.com/photos).
 
-### `npm test`
+## Running the App Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this application on your local machine, follow these steps:
 
-### `npm run build`
+1. **Clone the Repository**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/h-shreesha/cube-assignment.git
+   cd cube-assignment
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies**:
+   Make sure you have Node.js and npm installed. Then, run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Run the Application**:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   The application should now be running on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Directory Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The main files and directories in this project are:
 
-## Learn More
+- `src/`: Contains the source code for the application.
+  - `components/`: Contains reusable React components.
+  - `hooks/`: Contains custom hooks used in the application.
+  - `App.tsx`: The main application component.
+  - `index.tsx`: The entry point for the React application.
+  - `styles/`: Contains the Tailwind CSS configuration and global styles.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Additional Information about optimization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - The application uses React hooks (`useState`, `useEffect`) for managing state and side effects efficiently.
+
+    - Used (` React.memo`, `useCallback`) to prevent unnecessary re-rendering.
+
+    - For the left side sidebar, implemented infinite scrolling feature so that data keeps on loading as we scroll improving the initial load time.
