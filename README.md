@@ -65,3 +65,5 @@ The main files and directories in this project are:
     - Used (` React.memo`, `useCallback`) to prevent unnecessary re-rendering.
 
     - For the left side sidebar, implemented Infinite Scrolling feature so that data keeps on loading as we scroll improving the initial load time.
+
+    - Implemented Lazy Loading to improve the initial loading time.
